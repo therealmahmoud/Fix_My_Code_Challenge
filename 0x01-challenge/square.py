@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 """ Module for square class"""
 
+
 class square():
     """Square class"""
     width = 0
     height = 0
 
-    
     def __init__(self, *args, **kwargs):
         """ Instantiation of class """
         for key, value in kwargs.items():
@@ -23,6 +23,7 @@ class square():
     def __str__(self):
         """ Printable representation """
         return "{}/{}".format(self.width, self.height)
+
 
 if __name__ == "__main__":
     """ Create a square object """
